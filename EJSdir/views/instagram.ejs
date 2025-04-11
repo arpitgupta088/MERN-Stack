@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+</head>
+<body>
+    <!-- <h2>this page belongs to @ <%= username %></h2> --> <!-- username ayega brackets me-->
+    <button>follow</button>
+    <button>message</button>
+
+    <h3>Accounts that follow you : </h3>
+    <ul>
+        <% for(let name of followers) { %>  <!-- ye js ka part h-->
+            <li> <%= name %> </li>                  <!-- ye plain html ka-->
+       <% } %>                            <!-- ye bhi js ka-->
+    </ul>
+</body>
+</html>
